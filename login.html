@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - iDeve</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="loginpage">
+    <div class="login-container">
+        <a href="index.html" class="logo">iDeve</a> <!-- Logo clicável -->
+        <h1>Bem-vindo!</h1> <!-- Removido "à iDeve" -->
+        <p>Estamos aqui para te ajudar a resolver suas dívidas e recuperar o controle financeiro.</p>
+        <form action="#" method="POST" class="login-form">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="forgot-password">Esqueceu sua senha?</p>
+    </div>
+    <script>
+        document.querySelector('.login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+    
+            // Obtendo os valores do formulário
+            const inputUsername = document.getElementById('username').value;
+            const inputPassword = document.getElementById('password').value;
+    
+            // Recuperando usuários registrados do localStorage
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+    
+            // Verificando as credenciais
+            const user = users.find(user => user.username === inputUsername && user.password === inputPassword);
+    
+            if (user) {
+                alert('Login bem-sucedido!');
+                window.location.href = 'index.html'; // Redireciona para a página inicial
+            } else {
+                alert('Usuário ou senha incorretos. Tente novamente.');
+            }
+        });
+    </script>
+    
+</body>
+</html>
