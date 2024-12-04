@@ -1,0 +1,285 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+button, .cta-btn, .login-btn {
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .cta-btn:hover, .login-btn:hover {
+    background-color: #218838;
+}
+
+
+.homepage header {
+    background-color: #28a745;
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage header .logo h1 {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.homepage nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.homepage nav ul li {
+    margin-left: 20px;
+}
+
+.homepage nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.homepage nav ul li a:hover {
+    color: #ddd;
+}
+
+.hero {
+    background-color: #e9f7ef;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.about-section, .services-section, .contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.loginpage .login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 400px;
+    margin: 100px auto;
+    border-top: 4px solid #28a745;
+}
+
+.loginpage h1 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.loginpage p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.loginpage .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.loginpage input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.loginpage input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.loginpage button {
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginpage .forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28a745;
+    cursor: pointer;
+}
+
+.loginpage .forgot-password:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #28a745; 
+    color: #fff;               
+    text-align: center;       
+    padding: 20px;            
+    font-size: 14px;         
+}
+
+.services-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.services-section ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.services-section ul li {
+    margin: 10px 0; 
+}
+
+.logo {
+    display: block;              
+    margin: 0 auto 20px;         
+    font-size: 36px;              
+    font-weight: bold;          
+    color: #28a745;             
+    text-decoration: none;     
+    font-family: 'Arial', sans-serif; 
+}
+
+
+.homepage header .logo {
+    flex: 1;                  
+    margin-left: 20px;        
+}
+
+.homepage header .logo h1 {
+    margin: 0;               
+    font-size: 24px;          
+    color: #fff;              
+    font-weight: bold;        
+}
+
+/* Estilos para o cabeçalho com logo */
+.site-header {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px; /* Diminua o padding para reduzir a altura */
+    background-color: #2c3e50;
+    height: 60px; /* Define uma altura menor para o cabeçalho */
+}
+
+/* Estilos para a logo */
+.site-header .logo {
+    height: 150px; /* Ajuste a altura da logo para um tamanho adequado */
+    width: auto;
+}
+
+.site-header a {
+    text-decoration: none;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 1rem; /* Adiciona um pouco de espaçamento */
+    background-color: #f8f9fa; /* Exemplo de cor de fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+.site-header a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #007bff; /* Cor do texto dos links */
+    margin: 0 10px; /* Espaçamento horizontal entre links */
+}
+
+#user-area {
+    display: flex;
+    align-items: center; /* Alinha a mensagem e os botões no centro */
+}
+
+#welcome-message {
+    margin-right: 15px; /* Espaçamento à direita da mensagem de boas-vindas */
+    font-weight: bold; /* Torna a mensagem mais destacada */
+}
+
+.logout-btn {
+    background-color: #dc3545; /* Cor do botão de logout */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove bordas do botão */
+    padding: 0.5rem 1rem; /* Adiciona espaçamento interno ao botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse sobre o botão */
+}
+
+.logout-btn:hover {
+    background-color: #c82333; /* Cor do botão quando passa o mouse */
+}
+
+/* Estilos para os botões de Login e Registrar */
+.login-btn,
+.register-btn {
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Arial', sans-serif; /* Fonte específica para botões de login e registro */
+    font-size: 1em; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Permite o dimensionamento de botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+

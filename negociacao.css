@@ -1,0 +1,129 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1; /* Fundo claro */
+}
+
+/* Título da Página */
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Cor do texto */
+    margin-top: 20px;
+}
+
+/* Seção Principal */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9; /* Fundo da seção */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra da seção */
+}
+
+/* Estilo dos Botões */
+.button {
+    display: inline-block; /* Para que os botões fiquem na mesma linha se necessário */
+    margin: 10px auto; /* Margem em cima e embaixo */
+    padding: 12px 25px; /* Aumenta o padding para dar mais destaque */
+    background-color: #3498db; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para destacar o texto */
+    text-align: center; /* Centraliza o texto */
+    cursor: pointer; /* Mostra a mão ao passar o mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves para hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.button:hover {
+    background-color: #2980b9; /* Cor do botão ao passar o mouse */
+    transform: translateY(-2px); /* Eleva o botão levemente */
+}
+
+/* Estilos para o Cadastro de Dívidas */
+.cadastro-divida label {
+    display: block; /* Para cada label ficar em uma linha */
+    margin: 10px 0 5px; /* Margem acima e abaixo */
+    font-weight: bold; /* Negrito */
+}
+
+.cadastro-divida input {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 8px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço abaixo */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Cantos arredondados */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+/* Estilo do Resumo da Proposta */
+.resumo-proposta {
+    margin-top: 20px; /* Margem acima */
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Cantos arredondados */
+    background-color: #ecf0f1; /* Fundo do resumo */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Área de Comunicação */
+.area-comunicacao #mensagens {
+    max-height: 200px; /* Altura máxima */
+    overflow-y: auto; /* Rolar se necessário */
+    margin-bottom: 10px; /* Espaço abaixo */
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #ddd; /* Borda cinza claro */
+    background-color: #fafafa; /* Fundo claro */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+.area-comunicacao textarea {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Cantos arredondados */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    margin-top: 5px; /* Espaço acima */
+}
+
+/* Estilo dos Botões na Área de Comunicação */
+.area-comunicacao button {
+    background-color: #3498db; /* Cor do botão na área de comunicação */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Mão ao passar o mouse */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaço acima */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves para hover */
+}
+
+.area-comunicacao button:hover {
+    background-color: #2980b9; /* Cor do botão ao passar o mouse */
+    transform: translateY(-2px); /* Eleva o botão levemente */
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px; /* Diminua o padding para reduzir a altura */
+    background-color: #2c3e50;
+    height: 60px; /* Define uma altura menor para o cabeçalho */
+}
+
+/* Estilos para a logo */
+.site-header .logo {
+    height: 150px; /* Ajuste a altura da logo para um tamanho adequado */
+    width: auto;
+}
+
+.site-header a {
+    text-decoration: none;
+}
+

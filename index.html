@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDeve - Soluções para suas dívidas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="homepage">
+    <header class="site-header">
+        <a href="index.html">
+            <img src="logo.png" alt="Logo iDeve" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li id="user-area">
+                    <span id="welcome-message" style="display: none;"></span>
+                    <a href="login.html" id="login-link" class="login-btn" style="display: none;">Login</a>
+                    <a href="register.html" class="register-btn" style="display: none;">Registrar-se</a>
+                    <button id="logout-btn" class="logout-btn" style="display: none;">Sair</button>
+                </li>
+            </ul>
+        </nav>
+    </header>    
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Recupere o controle de sua vida financeira</h2>
+                <p>Na iDeve, ajudamos você a eliminar suas dívidas e reconstruir seu futuro financeiro.</p>
+                <a href="login.html" class="cta-btn" id="cta-btn">Acesse sua conta</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section">
+            <h3>Sobre a iDeve</h3>
+            <p>Somos especialistas em ajudar pessoas e empresas a resolverem problemas financeiros e quitarem suas dívidas. Nosso objetivo é devolver a paz financeira a quem mais precisa.</p>
+        </section>
+
+        <section id="servicos" class="services-section">
+            <h3>Nossos Serviços</h3>
+            <ul>
+                <li><a href="negociacao.html">Negociação de Dívidas</a></li>
+                <li><a href="consultoria.html">Consultoria Financeira</a></li>
+                <li><a href="educacao.html">Educação Financeira Personalizada</a></li>
+                <li><a href="planejamento.html">Planejamento Financeiro</a></li>
+            </ul>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <h3>Fale Conosco</h3>
+            <p>Entre em contato e saiba como podemos te ajudar a sair das dívidas e recuperar sua tranquilidade financeira.</p>
+            <p>Email: contato@ideve.com | Telefone: (11) 1234-5678</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 iDeve - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // Função para verificar se o usuário está logado
+        function checkLogin() {
+            const loggedInUser = localStorage.getItem('loggedInUser');
+            const welcomeMessage = document.getElementById('welcome-message');
+            const loginLink = document.getElementById('login-link');
+            const registerLink = document.querySelector('.register-btn');
+            const logoutBtn = document.getElementById('logout-btn');
+            const ctaBtn = document.getElementById('cta-btn');
+
+            if (loggedInUser) {
+                welcomeMessage.textContent = `Bem-vindo, ${loggedInUser}!`;
+                welcomeMessage.style.display = 'inline';
+                loginLink.style.display = 'none';
+                registerLink.style.display = 'none';
+                logoutBtn.style.display = 'inline';
+                ctaBtn.style.display = 'none'; // Oculta o botão "Acesse sua conta"
+            } else {
+                welcomeMessage.style.display = 'none';
+                loginLink.style.display = 'inline';
+                registerLink.style.display = 'inline';
+                logoutBtn.style.display = 'none';
+                ctaBtn.style.display = 'inline'; // Mostra o botão "Acesse sua conta"
+            }
+        }
+
+        // Função para logout
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            localStorage.removeItem('loggedInUser');
+            alert('Você saiu da sua conta.');
+            checkLogin(); // Atualiza a exibição do cabeçalho
+        });
+
+        // Verifica o login ao carregar a página
+        checkLogin();
+    </script>
+</body>
+</html>

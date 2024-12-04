@@ -1,0 +1,73 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1; /* Fundo claro */
+}
+
+/* Título da Página */
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Cor do texto */
+    margin-top: 20px;
+}
+
+/* Seção Principal */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9; /* Fundo da seção */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra da seção */
+}
+
+/* Estilo dos Botões */
+.button {
+    display: inline-block; /* Para que os botões fiquem na mesma linha se necessário */
+    margin: 10px auto; /* Margem em cima e embaixo */
+    padding: 12px 25px; /* Aumenta o padding para dar mais destaque */
+    background-color: #3498db; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para destacar o texto */
+    text-align: center; /* Centraliza o texto */
+    cursor: pointer; /* Mostra a mão ao passar o mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves para hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.button:hover {
+    background-color: #2980b9; /* Cor do botão ao passar o mouse */
+    transform: translateY(-2px); /* Eleva o botão levemente */
+}
+
+/* Estilo do Formulário */
+form {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+}
+
+label {
+    margin: 10px 0 5px; /* Margem acima e abaixo */
+    font-weight: bold; /* Negrito */
+}
+
+input, textarea {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço abaixo */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Cantos arredondados */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+/* Resultado do Envio */
+#resultado-contato {
+    margin-top: 10px;
+    color: #27ae60; /* Cor verde para sucesso */
+}
+
